@@ -7,33 +7,37 @@ import java.net.Socket;
  * Description:
  * 天气：晴天
  * 目标：Good Offer
- * Date    2021-01-04 16:04
+ * Date    2021-01-05 10:04
  */
 public class TCPEchoServer {
-    //(1)初始化服务器
-    //(2)进入主循环
-    // a)从内核中获取TCP连接
-    // b) 处理TCP连接
+    //1)初始化socket对象
+    //2)进入主循环
+    //a)与TCP进行连接
+    //b)处理TCP连接
     //①读取请求并解析
     //②根据请求计算响应
     //③将响应写回客户端
-    //serverSocket负责和客户端建立连接
-    private ServerSocket serverSocket = null;
 
+    //初始化
+    private ServerSocket serverSocket = null;
+        //此处的serverSort负责与客户端进行连接
     public TCPEchoServer(int port) throws IOException {
-       serverSocket = new ServerSocket(port);
+        serverSocket = new ServerSocket(port);
     }
+    /**
+     * 这里用的是TCP的长连接，所以用到了while循环，有个疏漏：accept的连接操作和processConnection处理连接操作是串行执行的
+     * 因此不支持多用户访问，需要借助多线程来解决这个问题
+     * */
     public void start() throws IOException {
         System.out.println("服务器启动");
         while(true){
-            //Socket负责和客户端交互
-            //a)从内核中获取TCP连接:由操作系统内核管理
-          Socket clientSocket = serverSocket.accept();
-            //b)处理连接
+            //a)与Tcp进行连接
+            Socket clientSocket = serverSocket.accept();
+            //b)处理TCP连接
+            //clientSocket负责与客户端进行交互
             processConnection(clientSocket);
         }
     }
-
     private void processConnection(Socket clientSocket) {
         System.out.printf("[%s:%d]客户端上线",clientSocket.getInetAddress().toString(),
                 clientSocket.getPort());
@@ -72,7 +76,7 @@ public class TCPEchoServer {
     }
 
     public static void main(String[] args) throws IOException {
-        TCPEchoServer server = new TCPEchoServer(9096);
+        TCPEchoServer server = new TCPEchoServer(9095);
         server.start();
     }
 }
