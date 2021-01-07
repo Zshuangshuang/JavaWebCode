@@ -39,7 +39,7 @@ public class HttpServerV1 {
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()))
 
         ) {
-            while(true){
+
                 //1)获取并解析请求
                 //a)解析首行
                 String firstLine = bufferedReader.readLine();
@@ -98,11 +98,11 @@ public class HttpServerV1 {
                 bufferedWriter.write(response);
                 bufferedWriter.flush();
 
-            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
-            {
+
                 //此处实现的是短连接，一次交互完毕自动关闭连接
                 try {
                     clientSocket.close();
@@ -112,7 +112,7 @@ public class HttpServerV1 {
             }
         }
 
-    }
+
 
     public static void main(String[] args) throws IOException {
         HttpServerV1 server = new HttpServerV1(9090);
