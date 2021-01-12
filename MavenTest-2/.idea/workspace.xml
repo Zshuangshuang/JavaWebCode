@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c50cf8b3-9eb7-4a1c-b042-8ba531fbe053" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../$RECYCLE.BIN/S-1-5-21-4256122164-3628868721-1993560196-1001/$R825I1T/2020_01_10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../$RECYCLE.BIN/S-1-5-21-4256122164-3628868721-1993560196-1001/$RPNWJU7/MyMaven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../$RECYCLE.BIN/S-1-5-21-4256122164-3628868721-1993560196-1001/$RT1L91U/2021_01_11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestMySql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10/2020_01_10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/2020_01_10_1HttpStudy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/out/production/2020_01_10_1HttpStudy/HttpRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/out/production/2020_01_10_1HttpStudy/HttpResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/out/production/2020_01_10_1HttpStudy/HttpServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/out/production/2020_01_10_1HttpStudy/HttpServer$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/out/production/2020_01_10_1HttpStudy/HttpServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/out/production/2020_01_10_1HttpStudy/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/src/HttpRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/src/HttpResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_10_1HttpStudy/src/HttpServer.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\Repository\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mwn4mZEtU2xNPALt8tnoukwk1a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestMysql" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestMysql" />
+      <module name="MavenTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestMysql" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c50cf8b3-9eb7-4a1c-b042-8ba531fbe053" name="Default Changelist" comment="" />
+      <created>1610413331225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610413331225</updated>
+      <workItem from="1610413334291" duration="1872000" />
+      <workItem from="1610415329576" duration="3024000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1610418993125">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1610418993125" />
+    <state width="1179" height="225" key="GridCell.Tab.0.bottom" timestamp="1610419005423">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1179" height="225" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610419005423" />
+    <state width="1179" height="225" key="GridCell.Tab.0.center" timestamp="1610419005422">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1179" height="225" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610419005422" />
+    <state width="1179" height="225" key="GridCell.Tab.0.left" timestamp="1610419005422">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1179" height="225" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610419005422" />
+    <state width="1179" height="225" key="GridCell.Tab.0.right" timestamp="1610419005423">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1179" height="225" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610419005423" />
+  </component>
+</project>
