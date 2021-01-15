@@ -1,0 +1,4 @@
+api\RegisterServlet.class
+api\ArticleServlet.class
+view\HtmlGenerator.class
+api\LoginServlet.class

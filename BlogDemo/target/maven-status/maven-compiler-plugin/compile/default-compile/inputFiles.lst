@@ -1,5 +1,9 @@
-E:\BlogDemo\src\main\java\modle\Article.java
-E:\BlogDemo\src\main\java\modle\DBUtil.java
-E:\BlogDemo\src\main\java\modle\User.java
-E:\BlogDemo\src\main\java\modle\UserDao.java
-E:\BlogDemo\src\main\java\modle\ArticleDao.java
+E:\JavaWebCode\BlogDemo\src\main\java\modle\DBUtil.java
+E:\JavaWebCode\BlogDemo\src\main\java\view\HtmlGenerator.java
+E:\JavaWebCode\BlogDemo\src\main\java\api\ArticleServlet.java
+E:\JavaWebCode\BlogDemo\src\main\java\modle\Article.java
+E:\JavaWebCode\BlogDemo\src\main\java\modle\UserDao.java
+E:\JavaWebCode\BlogDemo\src\main\java\api\LoginServlet.java
+E:\JavaWebCode\BlogDemo\src\main\java\api\RegisterServlet.java
+E:\JavaWebCode\BlogDemo\src\main\java\modle\User.java
+E:\JavaWebCode\BlogDemo\src\main\java\modle\ArticleDao.java
