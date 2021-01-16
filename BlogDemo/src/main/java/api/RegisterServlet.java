@@ -1,7 +1,7 @@
 package api;
 
-import modle.User;
-import modle.UserDao;
+import model.User;
+import model.UserDao;
 import view.HtmlGenerator;
 
 import javax.servlet.ServletException;
@@ -12,46 +12,42 @@ import java.io.IOException;
 
 /**
  * Author:ZouDouble
- * Description:实现注册功能,浏览器通过post方法提交注册信息给服务器
+ * Description:
  * 天气：晴天
  * 目标：Good Offer
- * Date    2021-01-15 9:25
+ * Date    2021-01-16 19:04
  */
 public class RegisterServlet extends HttpServlet {
+    //浏览器通过doPost方法提交数据
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html; charset=utf-8");
-        // 1. 获取到前端提交的数据(用户名, 密码), 校验是否合法.
+        //1、获取到前端提交的数据(获取用户名和密码)，并校验用户名密码
         String name = req.getParameter("name");
         String password = req.getParameter("password");
-        if (name == null || "".equals(name)
-                || password == null || "".equals(password)) {
-            // 用户提交的数据有误.
-            // 返回一个错误页面. (一段字符串, html 构成得到)
-            String html = HtmlGenerator.getMessagePage("用户名或者密码为空",
-                    "register.html");
+        if (name == null || "".equals(name) || password == null
+        || "".equals(password)){
+            //用户提交的数据有问题，返回一个错误页面
+            String html = HtmlGenerator.getMessagePage("用户名或者密码为空","register.html");
             resp.getWriter().write(html);
             return;
         }
-        // 2. 拿着用户名在数据库中查一下, 看看当前用户名是否已经存在. 如果存在, 认为注册失败(用户名不能重复)
+        //2、根据用户名在数据库中查找，如果存在，则注册失败
         UserDao userDao = new UserDao();
-        User existUser = userDao.selectByName(name);
-        if (existUser != null) {
-            // existUser 非空, 说明该用户名已经存在. 就提示用户, 注册失败, 用户名重复
-            String html = HtmlGenerator.getMessagePage("用户名重复! 请换个名字!",
-                    "register.html");
+        User exitsUser = userDao.selectByName(name);
+        if (exitsUser != null){
+            String html = HtmlGenerator.getMessagePage("该用户已存在，请重新注册","register.html");
             resp.getWriter().write(html);
             return;
         }
-        // 3. 根据前端提交的数据, 构造 User 对象并插入到数据库中.
+        //3、根据用户提交的数据，构造user数据，插入数据库
         User user = new User();
         user.setName(name);
         user.setPassword(password);
         userDao.add(user);
-        // 4. 返回一个结果页面, 提示当前注册成功.
-        String html = HtmlGenerator.getMessagePage("注册成功! 点击跳转到登陆页面!",
+        //4、返回一个注册成功的页面
+        String html = HtmlGenerator.getMessagePage("注册成功!点击跳转至登录页面",
                 "login.html");
         resp.getWriter().write(html);
-
     }
 }
