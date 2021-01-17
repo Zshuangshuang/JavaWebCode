@@ -20,7 +20,7 @@ public class HtmlGenerator {
         stringBuilder.append("<meta charset=\"utf-8\">");
         stringBuilder.append("<title>提示页面</title>");
         stringBuilder.append("<style type=\"text/css\">body{" +
-                "background-image: url(\"http://1822.img.pp.sohu.com.cn/images/blog/2008/6/27/22/5/11b6fadec88.jpg\");" +
+                "background-image: url(\"https://tse1-mm.cn.bing.net/th/id/OIP.w-P7oEX8QhMGijkVDpA5NwHaEK?pid=Api&rs=1\");" +
                 "background-repeat: no-repeat;"+
                 "background-size: 100%;"+
                 "}");
@@ -45,20 +45,20 @@ public static String getArticleListPage(List<Article> articles, User user){
     stringBuilder.append("<title>提示页面</title>");
     //书写css
     stringBuilder.append("<style type=\"text/css\">body{" +
-            "background-image: url(\"http://1822.img.pp.sohu.com.cn/images/blog/2008/6/27/22/5/11b6fadec88.jpg\");" +
+            "background-image: url(\"https://tse1-mm.cn.bing.net/th/id/OIP.w-P7oEX8QhMGijkVDpA5NwHaEK?pid=Api&rs=1\");" +
             "background-repeat: no-repeat;"+
-            "background-position: 0 center;"+
+            "background-size: 100%;"+
             "}");
     stringBuilder.append("</style>");
     stringBuilder.append("<style>");
-    stringBuilder.append("a{" +
+    stringBuilder.append(".article{" +
             "color: #FFFAFA"+
             "text-decoration: none;"+
-            "display: inline-block;"+
+            //"display: inline-block;"+
             "width: 200px;"+
             "height: 50px;"+
             "}");
-    stringBuilder.append("a:hover{" +
+    stringBuilder.append(".article:hover{" +
             "color:Lavende;"+
             "background: LightSkyBlue;"+
             "}");
@@ -69,8 +69,10 @@ public static String getArticleListPage(List<Article> articles, User user){
     //文章列表,显示每个文章的标题
     for (Article article : articles){
         stringBuilder.append(String.format("<div style=\"width: 200px; height: 50px; line-height: 50px\">" +
-                        "<a href=\"article?articleId=%d\">%s</a></div>"
-                ,article.getArticleId(),article.getTitle()));
+                        "<a class=\"article\" href=\"article?articleId=%d\">%s</a>" +
+                        "<a href=\"deleteArticle?articleId=%d\"> 删除文章 </a>"+
+                        "</div>"
+                ,article.getArticleId(),article.getTitle(),article.getArticleId()));
     }
     stringBuilder.append("<hr>");
     stringBuilder.append(String.format("<div>当前共有博客%d篇</div>",articles.size()));
@@ -78,9 +80,9 @@ public static String getArticleListPage(List<Article> articles, User user){
     stringBuilder.append("<div>发布文章</div>");
     stringBuilder.append("<div>");
     stringBuilder.append("<form method=\"post\" action=\"article\">");
-    stringBuilder.append("<input type=\"text\" name=\"title\" placeholder=\"请输入标题\">");
+    stringBuilder.append("<input type=\"text\" style=\"width: 500px; margin-bottom: 5px; \"name=\"title\" placeholder=\"请输入标题\">");
     stringBuilder.append("<br>");
-    stringBuilder.append("<textarea name=\"content\" style=\"width: 500px; height: 300px\"></textarea>");
+    stringBuilder.append("<textarea name=\"content\" style=\"width: 500px; height: 300px;\"></textarea>");
     stringBuilder.append("<br>");
     stringBuilder.append("<input type=\"submit\" value-\"发布文章\">");
     stringBuilder.append("</form>");
@@ -99,9 +101,9 @@ public static String getArticleDetailPage(Article article,User user,User author)
     stringBuilder.append("<title>提示页面</title>");
     //书写css
     stringBuilder.append("<style type=\"text/css\">body{" +
-            "background-image: url(\"http://1822.img.pp.sohu.com.cn/images/blog/2008/6/27/22/5/11b6fadec88.jpg\");" +
+            "background-image: url(\"https://tse1-mm.cn.bing.net/th/id/OIP.w-P7oEX8QhMGijkVDpA5NwHaEK?pid=Api&rs=1\");" +
             "background-repeat: no-repeat;"+
-            "background-position: 0 center;"+
+            "background-size: 100%;"+
             "}");
     stringBuilder.append("</style>");
     stringBuilder.append("<style>");
@@ -122,8 +124,10 @@ public static String getArticleDetailPage(Article article,User user,User author)
     stringBuilder.append("<hr>");
     stringBuilder.append(String.format("<h2>%s</h2>",article.getTitle()));
     stringBuilder.append(String.format("<h4>作者：%s</h4>",author.getName()));
-    stringBuilder.append("<div>文章内容如下</div>");
-    stringBuilder.append(String.format("<div>%s</div>",article.getContent()));
+    //构造正文内容
+    stringBuilder.append("<div>文章内容如下:</div>");
+    stringBuilder.append(String.format("<div>%s</div>",article.getContent().replace("\n","<br>")));
+
     stringBuilder.append("</body>");
     stringBuilder.append("</head>");
     stringBuilder.append("</html>");

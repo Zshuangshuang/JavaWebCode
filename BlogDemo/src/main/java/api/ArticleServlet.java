@@ -67,6 +67,8 @@ public class ArticleServlet extends HttpServlet {
             resp.getWriter().write(html);
             return;
         }
+        /*//为了验证换行消失问题，将article中的正文打印出来
+        System.out.println("文章内容:"+article.getContent());*/
         //②根据作者id，找到作者信息
         UserDao userDao = new UserDao();
         User author = userDao.selectByUserId(article.getUserId());
@@ -78,10 +80,33 @@ public class ArticleServlet extends HttpServlet {
     @Override
     //负责发布文章
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html; charset=utf-8");
         //①判断用户登录状态，若用户尚未登录，则需要提示用于登录
         HttpSession httpSession = req.getSession(false);
+        if(httpSession == null){
+            String html = HtmlGenerator.getMessagePage("用户未登录","login.html");
+            resp.getWriter().write(html);
+            return;
+        }
+        User user = (User) httpSession.getAttribute("user");
         //②从请求中读取浏览器提交的参数(title,content)并进行校验
+        String title = req.getParameter("title");
+        String content = req.getParameter("content");
+        if (title == null || "".equals(title) || content == null || "".equals(content)){
+            String html = HtmlGenerator.getMessagePage("提交的标题或者正文为空","article");
+            resp.getWriter().write(html);
+            return;
+        }
         //③将数据插入数据库
+        ArticleDao articleDao = new ArticleDao();
+        Article article = new Article();
+        article.setTitle(title);
+        article.setContent(content);
+        article.setUserId(user.getUserId());
+        articleDao.add(article);
         //④返回发布成功页面
+        String html = HtmlGenerator.getMessagePage("发布成功","article");
+        resp.getWriter().write(html);
     }
 }
