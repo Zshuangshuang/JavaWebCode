@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90db99eb-ad42-48c3-a622-8038603def11" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../2020_01_11/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_11/src/HttpRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_11/src/HttpResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_11/src/HttpServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/2020_01_17习题.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/out/production/2020_01_17习题/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/out/production/2020_01_17习题/Solution1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/src/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020_01_17习题/src/Solution1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021_01_10TestHttp/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021_01_10TestHttp/src/HttpRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021_01_10TestHttp/src/HttpResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021_01_10TestHttp/src/HttpServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogDemo/src/main/db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogDemo/src/main/java/modle/Article.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogDemo/src/main/java/modle/ArticleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogDemo/src/main/java/modle/DBUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogDemo/src/main/java/modle/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogDemo/src/main/java/modle/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogDemo/src/main/webapp/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/MavenTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/src/main/java/TestMySql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MavenTest/src/main/webapp/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerletTest/src/main/java/CalcServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerletTest/src/main/java/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerletTest/src/main/webapp/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servlet/src/main/java/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servlet/src/main/java/ServletDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servlet/src/main/webapp/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/java/ServletDemo9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/webapp/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletPractice/src/main/webapp/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletReview/src/main/java/ServletDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletReview/src/main/webapp/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/CalcServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/ServletDemo9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/java/TestMysql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/resources/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServletStudy/src/main/webapp/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestHttpServer/TestHttpServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestHttpServer/src/HttpServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven-test/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../maven_test/maven_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../文件操作2020_01_17/src/FileDemo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../文件操作2020_01_17/src/FileDemo2.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\Repository\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1nDkkPcGcK08Cvu1rBgAijOiVnx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Application.FileDemo6">
+    <configuration name="FileDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileDemo3" />
+      <module name="文件操作2021_01_18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileDemo4" />
+      <module name="文件操作2021_01_18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileDemo5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileDemo5" />
+      <module name="文件操作2021_01_18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileDemo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileDemo6" />
+      <module name="文件操作2021_01_18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileRead" />
+      <module name="文件操作2021_01_18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FileDemo6" />
+        <item itemvalue="Application.FileDemo5" />
+        <item itemvalue="Application.FileDemo4" />
+        <item itemvalue="Application.FileDemo3" />
+        <item itemvalue="Application.FileRead" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90db99eb-ad42-48c3-a622-8038603def11" name="Default Changelist" comment="" />
+      <created>1610932190529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610932190529</updated>
+      <workItem from="1610932194137" duration="10558000" />
+      <workItem from="1610954606686" duration="1726000" />
+      <workItem from="1610956469150" duration="636000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1222" height="227" key="GridCell.Tab.0.bottom" timestamp="1610956348889">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="227" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610956348889" />
+    <state width="1222" height="227" key="GridCell.Tab.0.center" timestamp="1610956348889">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="227" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610956348889" />
+    <state width="1222" height="227" key="GridCell.Tab.0.left" timestamp="1610956348889">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="227" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610956348889" />
+    <state width="1222" height="227" key="GridCell.Tab.0.right" timestamp="1610956348889">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="227" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610956348889" />
+  </component>
+</project>
