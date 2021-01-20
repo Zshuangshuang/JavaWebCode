@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var People = {
+            name: "双双",
+            birth: 1999,
+            age: function () {
+                var nowTime = new Date().getFullYear();
+                return nowTime-this.birth;
+            }
+        }
+        alert(People.age());
+    </script>
+</body>
+</html>
