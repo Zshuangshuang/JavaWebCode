@@ -1,0 +1,14 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+</head>
+<body>
+<!--body要组织成一种特殊格式multipart/form-data专门用来上传文件-->
+<form method="post" action="uploadServlet" enctype="multipart/form-data">
+    <input type="file" name="image">
+    <br/>
+    <input type="submit" value="上传图片">
+</form>
+</body>
+</html>
