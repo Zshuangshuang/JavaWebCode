@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
 
     <title>主页</title>
+    <script src="js/jquery@3.3.1/jquery.js"></script>
+    <script>
+        $(function () {//页面加载完开始做的事情
+            $("#loginBtn").click(function () {
+                $.ajax({
+
+                    type: "post",
+                    url: "loginJson",
+                    dataType: "json",//响应体中的数据格式
+                    data: {
+                        //请求提交的数据
+                        username: $("#username").val(),
+                        password: $("#password").val(),
+                    },
+                    success(r){
+                       if (r.success()){
+
+                       }
+                    }
+                })
+            })
+        });
+
+    </script>
 </head>
 <body>
-成功访问
+
+    用户名：<input id="username" type="text" name="username" placeholder="请输入姓名"><br>
+    密码：<input id="password" type="password" name="password" placeholder="请输入密码"><br>
+    <input id="loginBtn" type="submit" value="登录" >
+
+
+<p>第1篇文章</p>
+<p>第2篇文章</p>
+<p>第3篇文章</p>
 </body>
 </html>

@@ -1,0 +1,21 @@
+h3{
+
+    font-size: 50px;
+    color: blue;
+}
+body{
+    text-align: left;
+    color: chocolate;
+}
+
+body{
+    background-image: url("image/deng.jpg");
+}
+
+li.h:hover{
+    color: aqua;
+
+}
+li.s:hover{
+    color: cornflowerblue;
+}

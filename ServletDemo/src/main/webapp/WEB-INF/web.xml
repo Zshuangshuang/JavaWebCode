@@ -13,6 +13,22 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Login301Servlet</servlet-name>
+        <servlet-class>org.example.servlet.Login301Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login301Servlet</servlet-name>
+        <url-pattern>/login301</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginJsonServlet</servlet-name>
+        <servlet-class>org.example.servlet.LoginJsonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginJsonServlet</servlet-name>
+        <url-pattern>/loginJson</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
