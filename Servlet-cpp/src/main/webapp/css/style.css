@@ -1,0 +1,11 @@
+body{
+    background-image: url("../image/profile.jpg");
+}
+li:hover{
+    color: hotpink;
+}
+#eat{
+    font-size: 20px;
+    color: aquamarine;
+
+}
