@@ -1,9 +1,0 @@
-body{
-    background-image: url("image/profile.jpg");
-}
-#button{
-    color: deepskyblue;
-}
-#content:hover{
-    color: red;
-}
