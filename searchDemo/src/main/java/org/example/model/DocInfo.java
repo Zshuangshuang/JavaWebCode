@@ -1,5 +1,7 @@
 package org.example.model;
 
+import java.util.Objects;
+
 /**
  * Author:ZouDouble
  * Description:
@@ -14,6 +16,18 @@ public class DocInfo {
     private String url;//oracle官网api下html的url
     private String content;//网页内容:html(<标签>内容</标签>),内容是正文
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DocInfo docInfo = (DocInfo) o;
+        return Objects.equals(id, docInfo.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 
     public Integer getId() {
         return id;

@@ -8,6 +8,8 @@ package org.example.util;
  * Date    2021-01-25 11:24
  */
 
+import org.ansj.domain.Term;
+import org.ansj.splitWord.analysis.ToAnalysis;
 import org.example.model.DocInfo;
 import org.example.model.Weight;
 
@@ -66,14 +68,71 @@ public class Index {
 
         for (DocInfo doc : FORWARD_INDEX){
             //一个doc,分别对标题和正文分词，每一个分词生成一个weight对象，需要计算权重
-
+            //第一次出现的分词关键词，要new weight对象
+            Map<String,Weight> cash = new HashMap<>();
+            //对标题进行分词
+            List<Term> titles = ToAnalysis.parse(doc.getTitle()).getTerms();
+            //遍历处理标题分词
+            for (Term title:titles){
+                Weight w = cash.get(title.getName());//获取标题分词的键对应的weight对象
+                if (w == null){
+                    w = new Weight();
+                    w.setDoc(doc);
+                    w.setKeyWord(title.getName());
+                    cash.put(title.getName(),w);
+                }
+                //标题权重加10
+                w.setWeight(w.getWeight()+10);
+            }
+            List<Term> contents = ToAnalysis.parse(doc.getContent()).getTerms();
+            //遍历处理正文内容
+            for (Term content:contents){
+                Weight w = cash.get(content.getName());//获取内容分词的关键词对应的weight对象
+                if (w == null){
+                    w = new Weight();
+                    w.setDoc(doc);
+                    w.setKeyWord(content.getName());
+                    cash.put(content.getName(),w);
+                }
+                //内容权重加1
+                w.setWeight(w.getWeight()+1);
+            }
+            //将临时保存的map数据,包含keyword和weight全部保存到倒排索引当中去
+           for (Map.Entry<String,Weight> entry : cash.entrySet()){
+               String keyword = entry.getKey();
+               Weight weight = entry.getValue();
+               //更新保存到正排索引
+               //现在倒排索引中通过keyword获取已有的值
+               List<Weight> weights = INVERTED_INDEX.get(keyword);
+               if (weights == null){
+                   weights = new ArrayList<>();
+                   INVERTED_INDEX.put(keyword,weights);
+               }
+               weights.add(weight);
+           }
         }
     }
 
     public static void main(String[] args) {
         //测试正排索引是否构建成功
         Index.buildForwardIndex();
-        FORWARD_INDEX.stream()
-                .forEach( System.out ::println);
+        /*FORWARD_INDEX.stream()
+                .forEach( System.out ::println);*/
+        //测试倒排索引
+        //①构建倒排索引
+        Index.buildInvertedIndex();
+        //②打印
+        for (Map.Entry<String,List<Weight>> entry : INVERTED_INDEX.entrySet()){
+            String keyword = entry.getKey();
+            System.out.print(keyword+": ");
+            List<Weight> weights = entry.getValue();
+            weights.stream()
+                    .map(weight -> {
+                        return "("+ weight.getDoc().getId()+", "+ weight.getWeight()+")";
+                    })
+                    //.collect(Collectors.toList());
+            .forEach(System.out ::print);
+            System.out.println();
+        }
     }
 }
