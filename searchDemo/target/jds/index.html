@@ -64,7 +64,7 @@
         el: "#app",
         data: {
             query: "",
-            results: [ ]
+            results: [ ],
         },
         methods: {
             search() {
@@ -74,6 +74,7 @@
                     context: this,
                     success: function(respData, status) {
                         this.results = respData.data;
+
                     }
                 })
             },

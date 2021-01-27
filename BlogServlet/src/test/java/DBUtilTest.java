@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+import org.example.util.DBUtil;
+import org.junit.Assert;
+
+import java.sql.Connection;
 
 /**
  * Author:ZouDouble
@@ -8,4 +11,8 @@ package PACKAGE_NAME;
  * Date    2021-01-24 17:45
  */
 public class DBUtilTest {
+    public static void main(String[] args) {
+        Connection connection = DBUtil.getConnection();
+        Assert.assertNotNull(connection);
+    }
 }

@@ -135,4 +135,8 @@ public class Index {
             System.out.println();
         }
     }
+
+    public static  List<Weight> get(String keyword) {
+        return INVERTED_INDEX.get(keyword);
+    }
 }
