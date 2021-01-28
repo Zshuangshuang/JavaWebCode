@@ -14,7 +14,7 @@ $(function () {
                     //前端页面url直接跳转某个路径
                     window.location.href = "../jsp/articleList.jsp";
                 }else{
-                    alert("错误码："+r.code+"\n错误消息："+r.message)
+                    alert("错误码："+r.code+"\n错误消息："+r.message);
                 }
             }
         })

@@ -5,7 +5,9 @@ import org.example.exception.AppException;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Author:ZouDouble
@@ -33,5 +35,25 @@ public class DBUtil {
            throw new AppException("DB001","获取数据库连接失败",e);
         }
 
+    }
+    public static void close(Connection connection, Statement statement, ResultSet resultSet)  {
+        try {
+            if (resultSet != null){
+                resultSet.close();
+            }
+            if (statement != null){
+                statement.close();
+            }
+           if (connection != null){
+               connection.close();
+           }
+
+        } catch (SQLException e) {
+           throw new AppException("DB002","数据库释放资源出错",e);
+        }
+
+    }
+    public static void close(Connection connection,Statement statement){
+        close(connection,statement,null);
     }
 }
