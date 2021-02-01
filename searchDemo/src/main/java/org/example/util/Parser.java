@@ -25,7 +25,7 @@ public class Parser {
     //api目录
     public static final String API_PATH = "D:\\jdk-8u261-docs-all\\docs\\api";
     //构建的本地文件正排索引
-    public static final String RAW_DATA = "D:/raw_data.txt";
+    public static final String RAW_DATA = "/root/raw_data.txt";
     //官方api文档根路径
     public static final String API_BASEPATH = "https://docs.oracle.com/javase/8/docs/api";
 
