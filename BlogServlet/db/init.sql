@@ -5,7 +5,7 @@ use servlet_blog;
 drop table if exists user;
 create table user(
 userId int primary key auto_increment,
-name varchar(20) not null unique,
+username varchar(20) not null unique,
 password varchar(20) not null,
 nickName varchar(20),
 sex varchar(3),
@@ -13,9 +13,9 @@ birthday date,
 head varchar(50)
 );
 
-insert into user(name,password) values ('abc',123);
-insert into user(name,password) values ('zss',456);
-insert into user(name,password) values ('xxx',789);
+insert into user(username,password) values ('a',1);
+insert into user(username,password) values ('b',2);
+insert into user(username,password) values ('c',2);
 
 drop table if exists article;
 create table article(
@@ -32,3 +32,5 @@ insert into article( title, content, userId) values ('快速排序','public ***'
 insert into article( title, content, userId) values ('希尔排序','public ***',2);
 insert into article( title, content, userId) values ('选择排序','public ***',3);
 insert into article( title, content, userId) values ('归并排序','public ***',1);
+
+select userId, username, password, nickName, sex, birthday, head from user where username='a';

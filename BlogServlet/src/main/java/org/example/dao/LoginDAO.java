@@ -22,12 +22,23 @@ public class LoginDAO {
         ResultSet resultSet = null;
        try {
             connection = DBUtil.getConnection();
-            String sql = "";
+            String sql = "select userId, username, password, nickName, sex, birthday, head " +
+                    "from user where username=?";
             preparedStatement = connection.prepareStatement(sql);
+            //设置占位符的值
+           preparedStatement.setString(1,username);
             resultSet = preparedStatement.executeQuery();
             User user = null;
             while(resultSet.next()){
                 user = new User();
+                //设置User的值
+                user.setUserId(resultSet.getInt("userId"));
+                user.setUsername(resultSet.getString("username"));
+                user.setPassword(resultSet.getString("password"));
+                user.setBirthday(resultSet.getDate("birthday"));
+                user.setHead(resultSet.getString("head"));
+                user.setNickname(resultSet.getString("nickName"));
+                user.setSex(resultSet.getString("sex"));
             }
             return user;
        }catch (Exception e){
