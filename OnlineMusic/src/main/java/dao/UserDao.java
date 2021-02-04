@@ -16,7 +16,7 @@ import java.sql.SQLException;
  * Date    2021-02-02 13:41
  */
 public class UserDao {
-    public static void resister(User user){
+    public void resister(User user){
         Connection connection = null;
         PreparedStatement statement = null;
         String username = user.getUsername();
@@ -71,6 +71,34 @@ public class UserDao {
             DBUtils.getClose(connection,statement,resultSet);
         }
         return null;
+    }
+    public User selectByName(String username){
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        User user = null;
+        try{
+            connection = DBUtils.getConnection();
+            String sql = "select * from user where username=?";
+            statement = connection.prepareStatement(sql);
+            statement.setString(1,username);
+            resultSet = statement.executeQuery();
+            if (resultSet.next()){
+                user = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setPassword(resultSet.getString("password"));
+                user.setUsername(resultSet.getString("username"));
+              /*  user.setAge(resultSet.getInt("age"));
+                user.setEmail(resultSet.getString("email"));
+                user.setGender(resultSet.getString("gender"));*/
+                return user;
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement,resultSet);
+        }
+        return user;
     }
 
 

@@ -30,4 +30,9 @@ create table lovemusic(
 );
 
 insert into user(username, password, age, gender, email) values('zss','123',21,'女','1434278632@qq.com');
-insert into music(title, singer, time, url, userId) value ('南方姑娘','赵雷','2020-02-02 ','music\\南方姑娘',1);
+insert into music(title, singer, time, url, userId) values ('南方姑娘','赵雷','2020-02-02 ','music\\南方姑娘',1);
+insert into lovemusic(user_id, music_id) values (1,2);
+
+select music.id,title,singer,time,url,userId from lovemusic,music where lovemusic.user_id = music.userId;
+select music.id,title,singer,time,url,userId from lovemusic,music where lovemusic.user_id = music.userId and title like '%予%';
+insert into music(title, singer, time, url, userId) values ('四季予你','程响','2020-02-02 ','music//四季予你',1);

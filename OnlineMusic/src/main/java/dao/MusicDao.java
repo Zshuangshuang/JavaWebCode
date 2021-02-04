@@ -10,13 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Author:ZouDouble
- * Description:
- * 天气：晴天
- * 目标：Good Offer
- * Date    2021-02-02 13:41
- */
+
 public class MusicDao {
     public  List<Music> findMusic(){
         Connection connection = null;
@@ -104,7 +98,7 @@ public class MusicDao {
         }
         return null;
     }
-    public static int insert(String title,String singer,String time,String url,int userId){
+    public  int insert(String title,String singer,String time,String url,int userId){
         Connection connection = null;
         PreparedStatement statement = null;
 
@@ -129,6 +123,196 @@ public class MusicDao {
             DBUtils.getClose(connection,statement);
         }
         return 0;
+    }
+    public  int deleteByMusicId(int id){
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try {
+            connection = DBUtils.getConnection();
+            String sql = "delete  from music where id=?";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,id);
+            int ret = statement.executeUpdate();
+            if (ret == 1){
+                //表示删除music表中的数据成功
+                if (findLoveMusicOnDel(id)){
+                    int ret2 = removeLoveMusicOnDel(id);
+                    if (ret2 == 1){
+                        //表示删除loveMusic中的数据成功
+                        return 1;
+                    }
+                }
+            }
+            return 1;
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement);
+        }
+        return 0;
+    }
+
+    public int removeLoveMusicOnDel(int id) {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        int ret = 0;
+        try {
+            connection = DBUtils.getConnection();
+            String sql = "delete from lovemusic where id=?";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,id);
+            ret = statement.executeUpdate();
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement);
+        }
+        return ret;
+    }
+
+    public   boolean findLoveMusicOnDel(int id) {
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = DBUtils.getConnection();
+            String sql = "select  * from lovemusic where id=?";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,id);
+            resultSet = statement.executeQuery();
+            if (resultSet.next()){
+                return true;
+            }
+
+        }catch (SQLException e){
+            e.printStackTrace();
+
+        }finally {
+            DBUtils.getClose(connection,statement,resultSet);
+        }
+        return false;
+    }
+    //判断当前用户是否已经添加过喜欢的音乐
+    public boolean findMusicByMusicId(int userId,int musicId){
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = DBUtils.getConnection();
+            String sql = "select  * from lovemusic where user_id=? and music_id =?";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,userId);
+            statement.setInt(2,musicId);
+            resultSet = statement.executeQuery();
+            if (resultSet.next()){
+                return true;
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement,resultSet);
+        }
+        return false;
+    }
+    //添加到喜欢的音乐
+    public  boolean insertLoveMusic(int userId,int musicId){
+        Connection connection = null;
+        PreparedStatement statement = null;
+        try{
+            connection = DBUtils.getConnection();
+            String sql = "insert into lovemusic(user_id,music_id) values (?,?)";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,userId);
+            statement.setInt(2,musicId);
+            int ret = statement.executeUpdate();
+            if (ret == 1){
+                return true;
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement);
+        }
+        return false;
+    }
+
+    public  int removeLoveMusic(int userId,int musicId){
+        Connection connection = null;
+        PreparedStatement statement = null;
+        int ret = 0;
+        try {
+            connection = DBUtils.getConnection();
+            String sql = "delete from lovemusic where user_id=? and music_id=?";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,userId);
+            statement.setInt(2,musicId);
+            ret = statement.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement);
+        }
+        return ret;
+    }
+    //查询当前用户的全部喜欢
+    public  List<Music> findLoveMusic(int userId){
+        List<Music> musicList = new ArrayList<>();
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = DBUtils.getConnection();
+            String sql = "select music.id,title,singer,time,url,userId from lovemusic,music where lovemusic.user_id = music.userId and lovemusic.user_id=?;";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,userId);
+            resultSet = statement.executeQuery();
+            while(resultSet.next()){
+                Music music = new Music();
+                music.setId(resultSet.getInt("id"));
+                music.setUserId(resultSet.getInt("userId"));
+                music.setTitle(resultSet.getString("title"));
+                music.setUrl(resultSet.getString("url"));
+                music.setSinger(resultSet.getString("singer"));
+                music.setTime(resultSet.getDate("time"));
+                musicList.add(music);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement,resultSet);
+        }
+        return musicList;
+    }
+    //根据关键字查询喜欢的音乐
+    public  List<Music> ifMusicLove(String str,int userId){
+        List<Music> musicList = new ArrayList<>();
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
+        try{
+           connection = DBUtils.getConnection();
+           String sql = "select music.id,title,singer,time,url,userId from lovemusic,music where lovemusic.user_id = music.userId " +
+                   "and lovemusic.user_id=? and title like'%"+str+"%'";
+           statement = connection.prepareStatement(sql);
+           statement.setInt(1,userId);
+           resultSet = statement.executeQuery();
+           while(resultSet.next()){
+               Music music = new Music();
+               music.setId(resultSet.getInt("id"));
+               music.setUserId(resultSet.getInt("userId"));
+               music.setTitle(resultSet.getString("title"));
+               music.setUrl(resultSet.getString("url"));
+               music.setSinger(resultSet.getString("singer"));
+               music.setTime(resultSet.getDate("time"));
+               musicList.add(music);
+           }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            DBUtils.getClose(connection,statement,resultSet);
+        }
+        return musicList;
     }
 
 
