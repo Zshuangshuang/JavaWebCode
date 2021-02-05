@@ -16,30 +16,28 @@ public class MusicDao {
         Connection connection = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
-        List<Music> list = new ArrayList<>();
-        Music music = null;
+        List<Music> musicList = new ArrayList<>();
         try {
             String sql = "select * from music";
             connection = DBUtils.getConnection();
             statement = connection.prepareStatement(sql);
             resultSet = statement.executeQuery();
-            while(resultSet.next()){
-                music = new Music();
+            while (resultSet.next()) {
+                Music music = new Music();
                 music.setId(resultSet.getInt("id"));
+                music.setTitle(resultSet.getString("title"));
                 music.setSinger(resultSet.getString("singer"));
                 music.setTime(resultSet.getDate("time"));
-                music.setTitle(resultSet.getString("title"));
                 music.setUrl(resultSet.getString("url"));
                 music.setUserId(resultSet.getInt("userId"));
-                list.add(music);
-                return list;
+                musicList.add(music);
             }
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             e.printStackTrace();
         }finally {
             DBUtils.getClose(connection,statement,resultSet);
         }
-        return null;
+        return musicList;
     }
     public  Music findMusicById(int id){
         Connection connection = null;
@@ -198,17 +196,19 @@ public class MusicDao {
         Connection connection = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
+
         try {
+            String sql = "select * from lovemusic where user_id=? and music_id=?";
             connection = DBUtils.getConnection();
-            String sql = "select  * from lovemusic where user_id=? and music_id =?";
             statement = connection.prepareStatement(sql);
+
             statement.setInt(1,userId);
             statement.setInt(2,musicId);
             resultSet = statement.executeQuery();
-            if (resultSet.next()){
+            if(resultSet.next()) {
                 return true;
             }
-        }catch (SQLException e){
+        }catch (SQLException e) {
             e.printStackTrace();
         }finally {
             DBUtils.getClose(connection,statement,resultSet);
@@ -219,17 +219,18 @@ public class MusicDao {
     public  boolean insertLoveMusic(int userId,int musicId){
         Connection connection = null;
         PreparedStatement statement = null;
-        try{
+        int ret = 0;
+        try {
+            String sql = "insert into lovemusic(user_id, music_id) values (?,?)";
             connection = DBUtils.getConnection();
-            String sql = "insert into lovemusic(user_id,music_id) values (?,?)";
             statement = connection.prepareStatement(sql);
             statement.setInt(1,userId);
             statement.setInt(2,musicId);
-            int ret = statement.executeUpdate();
-            if (ret == 1){
+            ret = statement.executeUpdate();
+            if(ret == 1) {
                 return true;
             }
-        }catch (SQLException e){
+        }catch (SQLException e) {
             e.printStackTrace();
         }finally {
             DBUtils.getClose(connection,statement);
@@ -262,22 +263,25 @@ public class MusicDao {
         PreparedStatement statement = null;
         ResultSet resultSet = null;
         try {
+            String sql = "select m.id as music_id,title,singer,time,url,userid from lovemusic lm,music m where lm.music_id=m.id and user_id=?";
             connection = DBUtils.getConnection();
-            String sql = "select music.id,title,singer,time,url,userId from lovemusic,music where lovemusic.user_id = music.userId and lovemusic.user_id=?;";
             statement = connection.prepareStatement(sql);
             statement.setInt(1,userId);
             resultSet = statement.executeQuery();
-            while(resultSet.next()){
+
+            while (resultSet.next()) {
                 Music music = new Music();
-                music.setId(resultSet.getInt("id"));
-                music.setUserId(resultSet.getInt("userId"));
+                music.setId(resultSet.getInt("music_id"));
                 music.setTitle(resultSet.getString("title"));
-                music.setUrl(resultSet.getString("url"));
                 music.setSinger(resultSet.getString("singer"));
                 music.setTime(resultSet.getDate("time"));
+                music.setUrl(resultSet.getString("url"));
+                music.setUserId(resultSet.getInt("userid"));
                 musicList.add(music);
+
             }
-        }catch (SQLException e){
+
+        }catch (SQLException e) {
             e.printStackTrace();
         }finally {
             DBUtils.getClose(connection,statement,resultSet);

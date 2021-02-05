@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        System.out.println(username+": "+password);
+
 
         User loginUser = new User();
         loginUser.setUsername(username);

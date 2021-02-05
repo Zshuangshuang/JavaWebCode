@@ -19,17 +19,5 @@ public class MusicService {
         List<Music> musicList = musicDao.findMusic();
         return musicList;
     }
-    /*public  int findMusicById(int id){
-        MusicDao musicDao = new MusicDao();
-        if (musicDao.deleteByMusicId(id) == 1){
-            if (musicDao.findLoveMusicOnDel(id)){
-                int ret2 = musicDao.removeLoveMusicOnDel(id);
-                if (ret2 == 1){
-                    //表示删除loveMusic中的数据成功
-                    return 1;
-                }
-            }
-        }
-        return 0;
-    }*/
+
 }

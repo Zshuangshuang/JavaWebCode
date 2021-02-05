@@ -31,7 +31,8 @@ public class FindMusicServlet extends HttpServlet {
         String musicName = req.getParameter("musicName");
         MusicDao musicDao = new MusicDao();
         List<Music> musicList = new ArrayList<>();
-        if (musicName != null){
+
+        if(musicName != null) {
             musicList = musicDao.ifMusic(musicName);
         }else {
             musicList = musicDao.findMusic();

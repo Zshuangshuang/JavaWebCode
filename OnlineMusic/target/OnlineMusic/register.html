@@ -32,14 +32,14 @@
 				var gender=$("#gender").val();
 				var email=$("#email").val();
 				$.ajax({
-					url:"/registerServlet",
+					url:"/OnlineMusic/registerServlet",
                     data:{"username":username,"password":password,"age":age,"gender":gender,"email":email},
                     type:"POST",
 					dataType:"json",
 					success:function (data) {
                         console.log(data);
                         if(data.msg===true){
-                            window.location.href="login.html";
+                            window.location.href="/OnlineMusic/login.html";
                         }else{
                             /!*window.location.reload();*!/
                             $("#message").text("该用户已存在,请继续注册");
