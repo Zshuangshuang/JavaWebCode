@@ -19,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -50,13 +51,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JUnitGenerator.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JavaWebCode\OnlineMusic\src\main\webapp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\JavaWebCode\OnlineMusic\src\main\webapp" />
       <recent name="E:\JavaWebCode\OnlineMusic\src\main\webapp\images" />
@@ -64,11 +76,8 @@
       <recent name="E:\JavaWebCode\OnlineMusic\src\main\webapp\WEB-INF" />
       <recent name="E:\JavaWebCode\OnlineMusic\src\main\webapp\js" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\JavaWebCode\OnlineMusic\src\main\webapp" />
-    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
+  <component name="RunManager" selected="JUnit.UserDaoTest">
     <configuration name="MusicDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao.MusicDao" />
       <module name="OnlineMusic" />
@@ -82,29 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Person" />
-      <module name="OnlineMusic" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestLogin" />
-      <module name="OnlineMusic" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestMusic" />
-      <module name="OnlineMusic" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dao.UserDao" />
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlineMusic" />
       <extension name="coverage">
         <pattern>
@@ -112,6 +99,57 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineMusic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.resister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineMusic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="resister" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.selectByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineMusic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="selectByName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,20 +231,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Person" />
-      <item itemvalue="Application.TestLogin" />
-      <item itemvalue="Application.TestMusic" />
       <item itemvalue="Application.MusicDao" />
-      <item itemvalue="Application.UserDao" />
+      <item itemvalue="JUnit.UserDaoTest.resister" />
+      <item itemvalue="JUnit.UserDaoTest.login" />
+      <item itemvalue="JUnit.UserDaoTest.selectByName" />
+      <item itemvalue="JUnit.UserDaoTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest.selectByName" />
+        <item itemvalue="JUnit.UserDaoTest.login" />
+        <item itemvalue="JUnit.UserDaoTest.resister" />
         <item itemvalue="Application.MusicDao" />
-        <item itemvalue="Application.UserDao" />
-        <item itemvalue="Application.TestMusic" />
-        <item itemvalue="Application.TestLogin" />
-        <item itemvalue="Application.Person" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +264,9 @@
       <workItem from="1612401772448" duration="6710000" />
       <workItem from="1612423827007" duration="24922000" />
       <workItem from="1612487063840" duration="30933000" />
+      <workItem from="1613371735138" duration="571000" />
+      <workItem from="1613372326580" duration="3246000" />
+      <workItem from="1613477135984" duration="39000" />
     </task>
     <servers />
   </component>
@@ -249,10 +290,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="33" y="182" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1612230307246" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612517991247">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613372108043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1612517991247" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1613372108043" />
     <state x="363" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612490814975">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -281,82 +322,90 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="444" y="274" key="#com.intellij.ws.xml.jaxb.GenerateJAXBSchemasFromJavaDialog/0.0.1280.680@0.0.1280.680" timestamp="1612407129763" />
-    <state x="323" y="81" key="FileChooserDialogImpl" timestamp="1612232220288">
+    <state x="323" y="81" key="FileChooserDialogImpl" timestamp="1613372771839">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="323" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1612232220288" />
-    <state width="1237" height="65" key="GridCell.Tab.0.bottom" timestamp="1612533780847">
+    <state x="323" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1613372771839" />
+    <state width="1237" height="137" key="GridCell.Tab.0.bottom" timestamp="1613379111436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="65" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612533780847" />
-    <state width="1237" height="65" key="GridCell.Tab.0.center" timestamp="1612533780847">
+    <state width="1237" height="137" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613379111436" />
+    <state width="1237" height="137" key="GridCell.Tab.0.center" timestamp="1613379111436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="65" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1612533780847" />
-    <state width="1237" height="65" key="GridCell.Tab.0.left" timestamp="1612533780847">
+    <state width="1237" height="137" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613379111436" />
+    <state width="1237" height="137" key="GridCell.Tab.0.left" timestamp="1613379111436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="65" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1612533780847" />
-    <state width="1237" height="65" key="GridCell.Tab.0.right" timestamp="1612533780847">
+    <state width="1237" height="137" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613379111436" />
+    <state width="1237" height="137" key="GridCell.Tab.0.right" timestamp="1613379111436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="65" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1612533780847" />
-    <state width="1189" height="2" key="GridCell.Tab.1.bottom" timestamp="1612533780841">
+    <state width="1237" height="137" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613379111436" />
+    <state width="1237" height="137" key="GridCell.Tab.1.bottom" timestamp="1613379111437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.1.center" timestamp="1612533780840">
+    <state width="1237" height="137" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613379111437" />
+    <state width="1237" height="137" key="GridCell.Tab.1.center" timestamp="1613379111436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1612533780840" />
-    <state width="1189" height="2" key="GridCell.Tab.1.left" timestamp="1612533780840">
+    <state width="1237" height="137" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1613379111436" />
+    <state width="1237" height="137" key="GridCell.Tab.1.left" timestamp="1613379111436">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1612533780840" />
-    <state width="1189" height="2" key="GridCell.Tab.1.right" timestamp="1612533780841">
+    <state width="1237" height="137" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1613379111436" />
+    <state width="1237" height="137" key="GridCell.Tab.1.right" timestamp="1613379111437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.2.bottom" timestamp="1612533780841">
+    <state width="1237" height="137" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1613379111437" />
+    <state width="1208" height="235" key="GridCell.Tab.2.bottom" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.2.center" timestamp="1612533780841">
+    <state width="1208" height="235" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
+    <state width="1208" height="235" key="GridCell.Tab.2.center" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.2.left" timestamp="1612533780841">
+    <state width="1208" height="235" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
+    <state width="1208" height="235" key="GridCell.Tab.2.left" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.2.right" timestamp="1612533780841">
+    <state width="1208" height="235" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
+    <state width="1208" height="235" key="GridCell.Tab.2.right" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.3.bottom" timestamp="1612533780841">
+    <state width="1208" height="235" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
+    <state width="1208" height="235" key="GridCell.Tab.3.bottom" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.3.center" timestamp="1612533780841">
+    <state width="1208" height="235" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
+    <state width="1208" height="235" key="GridCell.Tab.3.center" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.3.left" timestamp="1612533780841">
+    <state width="1208" height="235" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
+    <state width="1208" height="235" key="GridCell.Tab.3.left" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
-    <state width="1189" height="2" key="GridCell.Tab.3.right" timestamp="1612533780841">
+    <state width="1208" height="235" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
+    <state width="1208" height="235" key="GridCell.Tab.3.right" timestamp="1613379111430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1189" height="2" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1612533780841" />
+    <state width="1208" height="235" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1613379111430" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1612494927154">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1612494927154" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1612430803297">
+    <state x="121" y="0" key="SettingsEditor" timestamp="1613374149519">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1612430803297" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1613374149519" />
+    <state x="412" y="135" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1613373154697">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="412" y="135" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1613373154697" />
+    <state x="28" y="0" key="new project wizard" timestamp="1613477174258">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1613477174258" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1612512412684">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
