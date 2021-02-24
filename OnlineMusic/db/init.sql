@@ -9,7 +9,7 @@ create table music(
     singer varchar(30) not null ,
     time varchar(40) not null,
     url varchar(100) not null ,
-    userId int
+    userId int not null
 );
 
 drop table if exists user;

@@ -11,15 +11,16 @@ import dao.UserDao;
  * Date    2021-02-04 10:58
  */
 public class UserService {
+    public void register(User user){
+        UserDao userDao = new UserDao();
+        userDao.resister(user);
+    }
     public User login(User loginUser){
         UserDao userDao = new UserDao();
         User user = userDao.login(loginUser);
         return user;
     }
-    public void register(User user){
-        UserDao userDao = new UserDao();
-        userDao.resister(user);
-    }
+
     public User selectByName(String username){
         UserDao userDao = new UserDao();
         User user = userDao.selectByName(username);

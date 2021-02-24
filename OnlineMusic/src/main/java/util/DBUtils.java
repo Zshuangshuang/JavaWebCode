@@ -8,13 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * Author:ZouDouble
- * Description:
- * 天气：晴天
- * 目标：Good Offer
- * Date    2021-02-02 11:16
- */
+
 public class DBUtils {
     private static String url = "jdbc:mysql://localhost:3306/music_server?characterEncoding=utf-8&useSSL=false";
     private static String username = "root";

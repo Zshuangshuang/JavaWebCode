@@ -4,6 +4,7 @@ import Entity.Music;
 import Entity.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.MusicDao;
+import service.MusicService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,15 +31,15 @@ public class FindLoveMusicServlet extends HttpServlet {
 
 
         String loveMusicName = req.getParameter("loveMusicName");
-        MusicDao musicDao = new MusicDao();
+        MusicService musicService = new MusicService();
         User user = (User) req.getSession().getAttribute("user");
         int user_id = user.getId();
 
         List<Music> musicList = new ArrayList<>();
         if(loveMusicName != null) {
-            musicList = musicDao.ifMusicLove(loveMusicName,user_id);
+            musicList = musicService.ifMusicLove(loveMusicName,user_id);
         }else {
-            musicList = musicDao.findLoveMusic(user_id);
+            musicList = musicService.findLoveMusic(user_id);
         }
         ObjectMapper mapper = new ObjectMapper();
         mapper.writeValue(resp.getWriter(),musicList);

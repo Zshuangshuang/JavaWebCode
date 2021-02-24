@@ -3,6 +3,7 @@ package servlet;
 import Entity.Music;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.MusicDao;
+import service.MusicService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,13 +31,13 @@ public class DeleteServlet extends HttpServlet {
         resp.setContentType("application/json; charset=utf-8");
         String idStr  = req.getParameter("id");
         int id = Integer.parseInt(idStr);
-        MusicDao musicDao = new MusicDao();
+        MusicService musicService = new MusicService();
         //判断当前id的音乐是否存在
-        Music music = musicDao.findMusicById(id);
+        Music music = musicService.findMusicById(id);
         if (music == null){
           return;
         }
-        int ret = musicDao.deleteByMusicId(id);
+        int ret = musicService.deleteByMusicId(id);
         Map<String,Object> message = new HashMap<>();
         if (ret == 1){
             //数据库里面的音乐信息已经删除,接下来需要删除服务器上面的音乐

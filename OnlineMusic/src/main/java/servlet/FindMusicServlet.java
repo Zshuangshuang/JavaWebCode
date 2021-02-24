@@ -3,6 +3,7 @@ package servlet;
 import Entity.Music;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.MusicDao;
+import service.MusicService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,13 +30,13 @@ public class FindMusicServlet extends HttpServlet {
         req.setCharacterEncoding("utf-8");
         resp.setContentType("application/json; charset=utf-8");
         String musicName = req.getParameter("musicName");
-        MusicDao musicDao = new MusicDao();
+        MusicService musicService = new MusicService();
         List<Music> musicList = new ArrayList<>();
 
         if(musicName != null) {
-            musicList = musicDao.ifMusic(musicName);
+            musicList = musicService.ifMusic(musicName);
         }else {
-            musicList = musicDao.findMusic();
+            musicList = musicService.findMusic();
         }
 
         Map<String,Object> message = new HashMap<>();

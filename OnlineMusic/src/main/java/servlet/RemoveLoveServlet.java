@@ -3,6 +3,7 @@ package servlet;
 import Entity.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.MusicDao;
+import service.MusicService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,8 +33,8 @@ public class RemoveLoveServlet extends HttpServlet {
         User user = (User)req.getSession().getAttribute("user");
         int userId = user.getId();
         Map<String,Object> message = new HashMap<>();
-        MusicDao musicDao = new MusicDao();
-        int ret = musicDao.removeLoveMusic(userId,musicId);
+        MusicService musicService = new MusicService();
+        int ret = musicService.removeLoveMusic(userId,musicId);
         if (ret == 1){
             message.put("msg",true);
         }else {

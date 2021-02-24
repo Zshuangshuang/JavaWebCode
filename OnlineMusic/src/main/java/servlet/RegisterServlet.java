@@ -2,7 +2,6 @@ package servlet;
 
 import Entity.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dao.UserDao;
 import service.UserService;
 
 import javax.servlet.ServletException;
@@ -14,13 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Author:ZouDouble
- * Description:
- * 天气：晴天
- * 目标：Good Offer
- * Date    2021-02-04 20:32
- */
+
 @WebServlet("/registerServlet")
 public class RegisterServlet extends HttpServlet {
     @Override

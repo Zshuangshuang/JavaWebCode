@@ -3,6 +3,7 @@ package servlet;
 import Entity.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.MusicDao;
+import service.MusicService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -33,9 +34,9 @@ public class LoveMusicServlet extends HttpServlet {
         User user = (User) req.getSession().getAttribute("user");
         int userId = user.getId();
 
-        MusicDao musicDao = new MusicDao();
+        MusicService musicService = new MusicService();
         // 判断以前这首歌是否被添加过为喜欢
-        boolean effect = musicDao.findMusicByMusicId(userId,musicId);
+        boolean effect = musicService.findMusicByMusicId(userId,musicId);
 
         Map<String ,Object> message = new HashMap<>();
 
@@ -43,7 +44,7 @@ public class LoveMusicServlet extends HttpServlet {
             //以前这首歌被添加过为喜欢
             message.put("msg",false);
         }else {
-            boolean flg = musicDao.insertLoveMusic(userId,musicId);
+            boolean flg = musicService.insertLoveMusic(userId,musicId);
             if(flg) {
                 message.put("msg",true);
             }else {

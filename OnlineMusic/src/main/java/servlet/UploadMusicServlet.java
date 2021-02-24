@@ -20,11 +20,9 @@ import java.util.List;
 
 
 /**
- * Author:ZouDouble
+
  * Description:上传音乐到服务器目录
- * 天气：晴天
- * 目标：Good Offer
- * Date    2021-02-05 10:18
+
  */
 @WebServlet("/upload")
 public class UploadMusicServlet extends HttpServlet {
