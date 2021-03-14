@@ -88,9 +88,9 @@ public class UserDao {
                 user.setId(resultSet.getInt("id"));
                 user.setPassword(resultSet.getString("password"));
                 user.setUsername(resultSet.getString("username"));
-              /*  user.setAge(resultSet.getInt("age"));
+                user.setAge(resultSet.getInt("age"));
                 user.setEmail(resultSet.getString("email"));
-                user.setGender(resultSet.getString("gender"));*/
+                user.setGender(resultSet.getString("gender"));
                 return user;
             }
         }catch (SQLException e){

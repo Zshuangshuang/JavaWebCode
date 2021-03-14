@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.util.Date;
 
 /**
@@ -29,8 +30,7 @@ public class UploadInsertServlet extends HttpServlet {
         String[] strings = fileName.split("\\.");
         String title = strings[0];
 
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        String time = sdf.format(new Date());
+        Date time = Date.from(Instant.now());
         User uer = (User)req.getSession().getAttribute("user");
         int userId = uer.getId();
         String url = "music/"+title;

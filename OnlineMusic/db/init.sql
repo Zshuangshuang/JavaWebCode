@@ -7,7 +7,7 @@ create table music(
     id int primary key auto_increment,
     title varchar(60) not null ,
     singer varchar(30) not null ,
-    time varchar(40) not null,
+    time datetime not null,
     url varchar(100) not null ,
     userId int not null
 );

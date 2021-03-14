@@ -27,8 +27,8 @@ import java.util.List;
 @WebServlet("/upload")
 public class UploadMusicServlet extends HttpServlet {
     //windows下的music目录
-    private final String SAVEPATH ="E:\\JavaWebCode\\OnlineMusic\\src\\main\\webapp\\music";
-   // private final String SAVEPATH ="/opt/apache-tomcat-8.5.57/webapps/OnlineMusic/music";
+    //private final String SAVEPATH ="E:\\JavaWebCode\\OnlineMusic\\src\\main\\webapp\\music";
+    private final String SAVEPATH ="/opt/apache-tomcat-8.5.57/webapps/OnlineMusic/music";
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             req.setCharacterEncoding("utf-8");
@@ -37,7 +37,7 @@ public class UploadMusicServlet extends HttpServlet {
             User user = (User)req.getSession().getAttribute("user");
             if (user == null){
                 System.out.println("请登录后在上传音乐");
-                resp.getWriter().write("<h2>请登录后在上传音乐</h2>");
+                resp.getWriter().write("请登录后在上传音乐");
                 return;
             }else {
                 //上传

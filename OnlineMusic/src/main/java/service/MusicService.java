@@ -3,7 +3,7 @@ package service;
 import Entity.Music;
 import dao.MusicDao;
 
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,7 +29,7 @@ public class MusicService {
         List<Music> list = musicDao.ifMusic(str);
         return list;
     }
-    public int insert(String title,String singer,String time,String url,int userId){
+    public int insert(String title, String singer,Date time, String url, int userId){
         MusicDao musicDao = new MusicDao();
         int ret = musicDao.insert(title, singer, time, url, userId);
         return ret;
@@ -46,7 +46,7 @@ public class MusicService {
     }
     public  boolean findLoveMusicOnDel(int id) {
         MusicDao musicDao = new MusicDao();
-        boolean ret = findLoveMusicOnDel(id);
+        boolean ret = musicDao.findLoveMusicOnDel(id);
         return ret;
 
     }

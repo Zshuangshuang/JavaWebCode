@@ -35,7 +35,7 @@ public class FindLoveMusicServlet extends HttpServlet {
         User user = (User) req.getSession().getAttribute("user");
         int user_id = user.getId();
 
-        List<Music> musicList = new ArrayList<>();
+        List<Music> musicList;
         if(loveMusicName != null) {
             musicList = musicService.ifMusicLove(loveMusicName,user_id);
         }else {

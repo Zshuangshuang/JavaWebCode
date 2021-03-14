@@ -8,10 +8,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
 public class MusicDao {
+    /**
+     * 查询音乐列表中所有的音乐
+     * */
     public  List<Music> findMusic(){
         Connection connection = null;
         PreparedStatement statement = null;
@@ -39,6 +43,9 @@ public class MusicDao {
         }
         return musicList;
     }
+    /**
+     * 根据id查询音乐
+     * */
     public  Music findMusicById(int id){
         Connection connection = null;
         PreparedStatement statement = null;
@@ -67,6 +74,9 @@ public class MusicDao {
         }
         return null;
     }
+    /**
+     * 模糊查询音乐，随意输入与标题相关的关键字，看音乐是否存在,不存在则返回Null
+     * */
     public  List<Music> ifMusic(String str){
         Connection connection = null;
         PreparedStatement statement = null;
@@ -96,7 +106,10 @@ public class MusicDao {
         }
         return null;
     }
-    public  int insert(String title,String singer,String time,String url,int userId){
+    /**
+     * 插入音乐
+     * */
+    public  int insert(String title, String singer, Date time, String url, int userId){
         Connection connection = null;
         PreparedStatement statement = null;
 
@@ -106,7 +119,7 @@ public class MusicDao {
             statement = connection.prepareStatement(sql);
             statement.setString(1,title);
             statement.setString(2,singer);
-            statement.setString(3,time);
+            statement.setDate(3, new java.sql.Date(time.getTime()));
             statement.setString(4,url);
             statement.setInt(5,userId);
             int ret = statement.executeUpdate();
@@ -122,6 +135,9 @@ public class MusicDao {
         }
         return 0;
     }
+    /**
+     * 根据id删除音乐
+     * */
     public  int deleteByMusicId(int id){
         Connection connection = null;
         PreparedStatement statement = null;
@@ -149,7 +165,9 @@ public class MusicDao {
         }
         return 0;
     }
-
+/**
+ * 根据喜欢列表中的id来删除音乐
+ * */
     public int removeLoveMusicOnDel(int id) {
         Connection connection = null;
         PreparedStatement statement = null;
@@ -168,8 +186,10 @@ public class MusicDao {
         }
         return ret;
     }
-
-    public   boolean findLoveMusicOnDel(int id) {
+/**
+ * 根据喜欢列表的id来查找对应id的音乐是否存在
+ * */
+    public  boolean findLoveMusicOnDel(int id) {
         Connection connection = null;
         PreparedStatement statement = null;
         ResultSet resultSet = null;
