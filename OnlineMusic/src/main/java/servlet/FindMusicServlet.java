@@ -2,7 +2,6 @@ package servlet;
 
 import Entity.Music;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dao.MusicDao;
 import service.MusicService;
 
 import javax.servlet.ServletException;
@@ -32,11 +31,14 @@ public class FindMusicServlet extends HttpServlet {
         String musicName = req.getParameter("musicName");
         MusicService musicService = new MusicService();
         List<Music> musicList = new ArrayList<>();
+        System.out.println(musicName);
 
-        if(musicName != null) {
+        if(musicName != null && !musicName.trim().isEmpty()) {
             musicList = musicService.ifMusic(musicName);
+            System.out.println(musicList);
         }else {
             musicList = musicService.findMusic();
+            System.out.println(musicList);
         }
 
         Map<String,Object> message = new HashMap<>();

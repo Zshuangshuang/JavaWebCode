@@ -7,33 +7,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2567e118-abb2-44de-8aa5-69719001b68b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/MusicDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/MusicServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ccbef8f8-a216-497e-8586-1618316ddd4b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ccbef8f8-a216-497e-8586-1618316ddd4b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/MusicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/MusicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MusicService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DeleteSelMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DeleteSelMusicServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DeleteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/FindLoveMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/FindLoveMusicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/FindMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/FindMusicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoveMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoveMusicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/RemoveLoveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/RemoveLoveServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/UploadInsertServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UploadInsertServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/UploadMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UploadMusicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/music/嚣张.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/music/是想你的声音啊.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/music/程响 - 四季予你.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/dao/MusicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/dao/MusicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/service/MusicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/service/MusicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/UploadInsertServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/UploadInsertServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/music/嚣张.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/music/是想你的声音啊.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/music/程响 - 四季予你.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/MusicDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/MusicDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/MusicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/MusicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/UploadInsertServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/UploadInsertServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/Entity/Music.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/Entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/dao/MusicDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/service/MusicService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/DeleteSelMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/FindLoveMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/FindMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/LoveMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/RemoveLoveServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/UploadInsertServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/servlet/UploadMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/classes/util/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/commons-fileupload-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/jackson-annotations-2.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/jackson-core-2.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/jackson-databind-2.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/mysql-connector-java-5.1.49.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/tomcat-annotations-api-9.0.39.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/lib/tomcat-embed-core-9.0.39.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/js/jquery-3.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/loveMusic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/uploadsucess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/Music.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/MusicDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/MusicService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DeleteSelMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/FindLoveMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/FindMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/LoveMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/RemoveLoveServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/UploadInsertServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/UploadMusicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/OnlineMusic.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/MusicDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/UserDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/MusicServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +243,7 @@
     </configuration>
     <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8088" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -202,6 +256,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_OnlineMusic_2" />
+        <option name="HTTP_PORT" value="8088" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -264,12 +320,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
       <item itemvalue="JUnit.MusicServiceTest.findLoveMusicOnDel" />
       <item itemvalue="JUnit.MusicServiceTest.findMusicByMusicId" />
       <item itemvalue="JUnit.MusicServiceTest.removeLoveMusic" />
       <item itemvalue="JUnit.MusicServiceTest.findLoveMusic" />
       <item itemvalue="JUnit.MusicServiceTest.ifMusicLove" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
     </list>
     <recent_temporary>
       <list>
@@ -305,6 +361,10 @@
       <workItem from="1614642820329" duration="24000" />
       <workItem from="1615639010998" duration="9250000" />
       <workItem from="1615706044512" duration="10864000" />
+      <workItem from="1615774625056" duration="649000" />
+      <workItem from="1615786022898" duration="3488000" />
+      <workItem from="1615796077944" duration="8938000" />
+      <workItem from="1615813314858" duration="742000" />
     </task>
     <servers />
   </component>
@@ -320,18 +380,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="524" y="203" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1614170068366" />
-    <state x="121" y="0" key="#Project_Structure" timestamp="1614173473471">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1615786106547">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1614173473471" />
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1615786106547" />
     <state x="33" y="182" key="#SQL_Dialects" timestamp="1612230307246">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="33" y="182" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1612230307246" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615640944278">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615800375298">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1615640944278" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1615800375298" />
     <state x="363" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612490814975">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -364,70 +424,70 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="323" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1613372771839" />
-    <state width="1208" height="271" key="GridCell.Tab.0.bottom" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.0.bottom" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.0.center" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.0.center" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.0.left" timestamp="1615723717727">
+    <state width="1208" height="364" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.0.left" timestamp="1615807315167">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615723717727" />
-    <state width="1208" height="271" key="GridCell.Tab.0.right" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615807315167" />
+    <state width="1208" height="364" key="GridCell.Tab.0.right" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.1.bottom" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.1.bottom" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.1.center" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.1.center" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.1.left" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.1.left" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.1.right" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.1.right" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.2.bottom" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.2.bottom" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.2.center" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.2.center" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.2.left" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.2.left" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.2.right" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="364" key="GridCell.Tab.2.right" timestamp="1615807315168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.3.bottom" timestamp="1615723717728">
+    <state width="1208" height="364" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1615807315168" />
+    <state width="1208" height="241" key="GridCell.Tab.3.bottom" timestamp="1615804668789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.3.center" timestamp="1615723717728">
+    <state width="1208" height="241" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
+    <state width="1208" height="241" key="GridCell.Tab.3.center" timestamp="1615804668789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.3.left" timestamp="1615723717728">
+    <state width="1208" height="241" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
+    <state width="1208" height="241" key="GridCell.Tab.3.left" timestamp="1615804668789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
-    <state width="1208" height="271" key="GridCell.Tab.3.right" timestamp="1615723717728">
+    <state width="1208" height="241" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
+    <state width="1208" height="241" key="GridCell.Tab.3.right" timestamp="1615804668789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="271" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1615723717728" />
+    <state width="1208" height="241" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1612494927154">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

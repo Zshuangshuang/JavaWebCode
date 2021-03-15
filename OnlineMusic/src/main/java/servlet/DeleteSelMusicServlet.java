@@ -45,9 +45,11 @@ public class DeleteSelMusicServlet extends HttpServlet {
             int ret = musicService.deleteByMusicId(id);
 
             if (ret == 1){
+                String realPath = req.getServletContext().getRealPath("/");
+                File file = new File(realPath+music.getUrl()+".mp3");
                 //File file = new File("E:\\JavaWebCode\\OnlineMusic\\src\\main\\webapp\\"+music.getUrl()+".mp3");
-                File file = new File("/opt/apache-tomcat-8.5.57/webapps/OnlineMusic/"+music.getUrl()+".mp3");
-                if (file.delete()){
+                //File file = new File("/opt/apache-tomcat-8.5.57/webapps/OnlineMusic/"+music.getUrl()+".mp3");
+                if (!file.exists()||file.delete()){
                     sum += ret;
                 }else {
                     message.put("msg",false);
