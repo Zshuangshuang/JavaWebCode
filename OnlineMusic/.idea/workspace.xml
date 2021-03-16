@@ -7,15 +7,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2567e118-abb2-44de-8aa5-69719001b68b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteLoveMusic05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusics02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusics04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/tsetSearchLoveMusic06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic07.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic08.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic09.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic12.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/UploadInsertServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UploadInsertServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/OnlineMusic/music/放生.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.MusicDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.UserDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.MusicServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/dao.MusicDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/dao.UserDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.MusicServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/MusicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/MusicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/FindLoveMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/FindLoveMusicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/delete/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +192,7 @@
     </configuration>
     <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8089" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -184,7 +205,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_OnlineMusic_2" />
-        <option name="HTTP_PORT" value="8089" />
+        <option name="JNDI_PORT" value="1088" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -294,6 +315,9 @@
       <workItem from="1615813314858" duration="742000" />
       <workItem from="1615815115111" duration="2256000" />
       <workItem from="1615818951485" duration="556000" />
+      <workItem from="1615853611380" duration="2583000" />
+      <workItem from="1615865851945" duration="2480000" />
+      <workItem from="1615878815842" duration="2145000" />
     </task>
     <servers />
   </component>
@@ -317,10 +341,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="33" y="182" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1612230307246" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615819111465">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615853745206">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1615819111465" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1615853745206" />
     <state x="363" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612490814975">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -353,70 +377,70 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="323" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1613372771839" />
-    <state width="1237" height="298" key="GridCell.Tab.0.bottom" timestamp="1615819512362">
+    <state width="1208" height="222" key="GridCell.Tab.0.bottom" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="298" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615819512362" />
-    <state width="1237" height="298" key="GridCell.Tab.0.center" timestamp="1615819512362">
+    <state width="1208" height="222" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="222" key="GridCell.Tab.0.center" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="298" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615819512362" />
-    <state width="1237" height="298" key="GridCell.Tab.0.left" timestamp="1615819512362">
+    <state width="1208" height="222" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="222" key="GridCell.Tab.0.left" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="298" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615819512362" />
-    <state width="1237" height="298" key="GridCell.Tab.0.right" timestamp="1615819512362">
+    <state width="1208" height="222" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="222" key="GridCell.Tab.0.right" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="298" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615819512362" />
-    <state width="1208" height="364" key="GridCell.Tab.1.bottom" timestamp="1615819512354">
+    <state width="1208" height="222" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="222" key="GridCell.Tab.1.bottom" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="364" key="GridCell.Tab.1.center" timestamp="1615819512354">
+    <state width="1208" height="222" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="222" key="GridCell.Tab.1.center" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="364" key="GridCell.Tab.1.left" timestamp="1615819512354">
+    <state width="1208" height="222" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="222" key="GridCell.Tab.1.left" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="364" key="GridCell.Tab.1.right" timestamp="1615819512354">
+    <state width="1208" height="222" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="222" key="GridCell.Tab.1.right" timestamp="1615880981563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="364" key="GridCell.Tab.2.bottom" timestamp="1615819512354">
+    <state width="1208" height="222" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615880981563" />
+    <state width="1208" height="241" key="GridCell.Tab.2.bottom" timestamp="1615879608858">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="364" key="GridCell.Tab.2.center" timestamp="1615819512354">
+    <state width="1208" height="241" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615879608858" />
+    <state width="1208" height="241" key="GridCell.Tab.2.center" timestamp="1615879608858">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="364" key="GridCell.Tab.2.left" timestamp="1615819512354">
+    <state width="1208" height="241" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1615879608858" />
+    <state width="1208" height="241" key="GridCell.Tab.2.left" timestamp="1615879608858">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="364" key="GridCell.Tab.2.right" timestamp="1615819512354">
+    <state width="1208" height="241" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1615879608858" />
+    <state width="1208" height="241" key="GridCell.Tab.2.right" timestamp="1615879608858">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="364" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1615819512354" />
-    <state width="1208" height="241" key="GridCell.Tab.3.bottom" timestamp="1615804668789">
+    <state width="1208" height="241" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1615879608858" />
+    <state width="1208" height="356" key="GridCell.Tab.3.bottom" timestamp="1615879487577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="241" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
-    <state width="1208" height="241" key="GridCell.Tab.3.center" timestamp="1615804668789">
+    <state width="1208" height="356" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615879487577" />
+    <state width="1208" height="356" key="GridCell.Tab.3.center" timestamp="1615879487577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="241" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
-    <state width="1208" height="241" key="GridCell.Tab.3.left" timestamp="1615804668789">
+    <state width="1208" height="356" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1615879487577" />
+    <state width="1208" height="356" key="GridCell.Tab.3.left" timestamp="1615879487577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="241" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
-    <state width="1208" height="241" key="GridCell.Tab.3.right" timestamp="1615804668789">
+    <state width="1208" height="356" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1615879487577" />
+    <state width="1208" height="356" key="GridCell.Tab.3.right" timestamp="1615879487577">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1208" height="241" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1615804668789" />
+    <state width="1208" height="356" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1615879487577" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1612494927154">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

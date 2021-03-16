@@ -50,7 +50,6 @@ public class LoginServlet extends HttpServlet {
             System.out.println("登录失败！");
             message.put("msg",false);
         }
-
         //将信息返回给前端
         ObjectMapper mapper = new ObjectMapper();
         mapper.writeValue(resp.getWriter(), message);

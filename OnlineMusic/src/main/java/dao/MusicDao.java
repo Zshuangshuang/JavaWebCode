@@ -283,7 +283,7 @@ public class MusicDao {
         PreparedStatement statement = null;
         ResultSet resultSet = null;
         try {
-            String sql = "select m.id as music_id,title,singer,time,url,userid from lovemusic lm,music m where lm.music_id=m.id and user_id=?";
+            String sql = "select m.id as music_id,title,singer,time,url,userid from lovemusic lm,music m where lm.music_id=m.id and lm.user_id=?";
             connection = DBUtils.getConnection();
             statement = connection.prepareStatement(sql);
             statement.setInt(1,userId);
@@ -298,9 +298,8 @@ public class MusicDao {
                 music.setUrl(resultSet.getString("url"));
                 music.setUserId(resultSet.getInt("userid"));
                 musicList.add(music);
-
             }
-
+            System.out.println("dao : " + musicList);
         }catch (SQLException e) {
             e.printStackTrace();
         }finally {
@@ -316,20 +315,22 @@ public class MusicDao {
         ResultSet resultSet = null;
         try{
            connection = DBUtils.getConnection();
-           String sql = "select music.id,title,singer,time,url,userId from lovemusic,music where lovemusic.user_id = music.userId " +
-                   "and lovemusic.user_id=? and title like'%"+str+"%'";
+            String sql = "select m.id as music_id,title,singer,time,url,userId from lovemusic lm,music m " +
+                    "where lm.music_id=m.id and user_Id=? and title like '%"+str+"%'";
            statement = connection.prepareStatement(sql);
            statement.setInt(1,userId);
            resultSet = statement.executeQuery();
            while(resultSet.next()){
                Music music = new Music();
-               music.setId(resultSet.getInt("id"));
+               music.setId(resultSet.getInt("music_id"));
                music.setUserId(resultSet.getInt("userId"));
                music.setTitle(resultSet.getString("title"));
                music.setUrl(resultSet.getString("url"));
                music.setSinger(resultSet.getString("singer"));
                music.setTime(resultSet.getDate("time"));
                musicList.add(music);
+
+               System.out.println("musicList: "+musicList);
            }
         }catch (SQLException e){
             e.printStackTrace();

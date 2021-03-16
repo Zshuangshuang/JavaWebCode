@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 browser = webdriver.Chrome()
-browser.get("http://123.207.204.18:8080/OnlineMusic/list.html")
+browser.get("http://127.0.0.1:8080/OnlineMusic/list.html")
 browser.maximize_window()
 time.sleep(3)
 

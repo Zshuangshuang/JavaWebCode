@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -34,12 +35,18 @@ public class FindLoveMusicServlet extends HttpServlet {
         User user = (User) req.getSession().getAttribute("user");
         int user_id = user.getId();
 
-        List<Music> musicList;
-        if(loveMusicName != null) {
+        System.out.println("loveMusicName : " + loveMusicName);
+
+        List<Music> musicList = new ArrayList<>();
+        if(loveMusicName != null && !loveMusicName .equals("") ) {
             musicList = musicService.ifMusicLove(loveMusicName,user_id);
+            System.out.println("fsafafsfasdsfafsa loveMusicName != null ");
         }else {
             musicList = musicService.findLoveMusic(user_id);
+
         }
+
+        System.out.println("musicList：" + musicList);
         ObjectMapper mapper = new ObjectMapper();
         mapper.writeValue(resp.getWriter(),musicList);
     }
