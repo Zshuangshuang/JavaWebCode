@@ -7,36 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2567e118-abb2-44de-8aa5-69719001b68b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteLoveMusic05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusics02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/testDeleteMusics04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/testSearchLoveMusic05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchLoveMusic/tsetSearchLoveMusic06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic08.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic09.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic12.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/MusicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/MusicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/FindLoveMusicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/FindLoveMusicServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/delete/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/deleteMusic/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic02.py" beforeDir="false" afterPath="$PROJECT_DIR$/../在线音乐播放器项目自动化测试/src2021_0315/searchMusic/testSearchMusic02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,6 +289,7 @@
       <workItem from="1615853611380" duration="2583000" />
       <workItem from="1615865851945" duration="2480000" />
       <workItem from="1615878815842" duration="2145000" />
+      <workItem from="1615881390949" duration="823000" />
     </task>
     <servers />
   </component>
@@ -453,10 +425,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="412" y="45" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1615648533974" />
-    <state x="28" y="0" key="new project wizard" timestamp="1614642843394">
+    <state x="28" y="0" key="new project wizard" timestamp="1615881423045">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1614642843394" />
+    <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1615881423045" />
     <state x="343" y="97" key="refactoring.ChangeSignatureDialog" timestamp="1615645404820">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
